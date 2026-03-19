@@ -1,0 +1,14 @@
+C:\Users\admin\Documents\New project\src\PersonalLifeAssistant.Domain\bin\Debug\net8.0\PersonalLifeAssistant.Domain.deps.json
+C:\Users\admin\Documents\New project\src\PersonalLifeAssistant.Domain\bin\Debug\net8.0\PersonalLifeAssistant.Domain.dll
+C:\Users\admin\Documents\New project\src\PersonalLifeAssistant.Domain\bin\Debug\net8.0\PersonalLifeAssistant.Domain.pdb
+C:\Users\admin\Documents\New project\src\PersonalLifeAssistant.Domain\obj\Debug\net8.0\PersonalLifeAssistant.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\admin\Documents\New project\src\PersonalLifeAssistant.Domain\obj\Debug\net8.0\PersonalLifeAssistant.Domain.AssemblyInfoInputs.cache
+C:\Users\admin\Documents\New project\src\PersonalLifeAssistant.Domain\obj\Debug\net8.0\PersonalLifeAssistant.Domain.AssemblyInfo.cs
+C:\Users\admin\Documents\New project\src\PersonalLifeAssistant.Domain\obj\Debug\net8.0\PersonalLifeAssistant.Domain.csproj.CoreCompileInputs.cache
+C:\Users\admin\Documents\New project\src\PersonalLifeAssistant.Domain\obj\Debug\net8.0\PersonalLifeAssistant.Domain.dll
+C:\Users\admin\Documents\New project\src\PersonalLifeAssistant.Domain\obj\Debug\net8.0\refint\PersonalLifeAssistant.Domain.dll
+C:\Users\admin\Documents\New project\src\PersonalLifeAssistant.Domain\obj\Debug\net8.0\PersonalLifeAssistant.Domain.pdb
+C:\Users\admin\Documents\New project\src\PersonalLifeAssistant.Domain\obj\Debug\net8.0\ref\PersonalLifeAssistant.Domain.dll
+C:\Users\admin\Documents\New project\.codex-temp-build\api\PersonalLifeAssistant.Domain.deps.json
+C:\Users\admin\Documents\New project\.codex-temp-build\api\PersonalLifeAssistant.Domain.dll
+C:\Users\admin\Documents\New project\.codex-temp-build\api\PersonalLifeAssistant.Domain.pdb
