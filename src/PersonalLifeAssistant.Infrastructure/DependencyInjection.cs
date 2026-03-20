@@ -3,6 +3,7 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.IdentityModel.Tokens;
+using Npgsql;
 using PersonalLifeAssistant.Application.Common.Interfaces;
 using PersonalLifeAssistant.Infrastructure.AI;
 using PersonalLifeAssistant.Infrastructure.Identity;
@@ -19,7 +20,7 @@ public static class DependencyInjection
         services.Configure<GeminiOptions>(configuration.GetSection(GeminiOptions.SectionName));
 
         services.AddDbContext<ApplicationDbContext>(options =>
-            options.UseNpgsql(configuration.GetConnectionString("DefaultConnection")));
+            options.UseNpgsql(GetDatabaseConnectionString(configuration)));
 
         services.AddHttpContextAccessor();
         services.AddScoped<ICurrentUserService, CurrentUserService>();
@@ -46,5 +47,31 @@ public static class DependencyInjection
 
         services.AddAuthorization();
         return services;
+    }
+
+    private static string GetDatabaseConnectionString(IConfiguration configuration)
+    {
+        var connectionString =
+            configuration.GetConnectionString("DefaultConnection")
+            ?? configuration["DATABASE_URL"]
+            ?? throw new InvalidOperationException("A database connection string was not configured.");
+
+        if (!connectionString.StartsWith("postgres://", StringComparison.OrdinalIgnoreCase)
+            && !connectionString.StartsWith("postgresql://", StringComparison.OrdinalIgnoreCase))
+        {
+            return connectionString;
+        }
+
+        var databaseUri = new Uri(connectionString);
+        var userInfo = databaseUri.UserInfo.Split(':', 2, StringSplitOptions.None);
+
+        return new NpgsqlConnectionStringBuilder
+        {
+            Host = databaseUri.Host,
+            Port = databaseUri.IsDefaultPort ? 5432 : databaseUri.Port,
+            Username = userInfo.Length > 0 ? Uri.UnescapeDataString(userInfo[0]) : string.Empty,
+            Password = userInfo.Length > 1 ? Uri.UnescapeDataString(userInfo[1]) : string.Empty,
+            Database = Uri.UnescapeDataString(databaseUri.AbsolutePath.TrimStart('/'))
+        }.ConnectionString;
     }
 }
