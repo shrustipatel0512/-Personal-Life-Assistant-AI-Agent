@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("PersonalLifeAssistant.Domain")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+21a9c981f383b81423a69fd94b0ca8bb656e41c3")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+32e083867d7f40b1d80040374eb4452ce8e37e7a")]
 [assembly: System.Reflection.AssemblyProductAttribute("PersonalLifeAssistant.Domain")]
 [assembly: System.Reflection.AssemblyTitleAttribute("PersonalLifeAssistant.Domain")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

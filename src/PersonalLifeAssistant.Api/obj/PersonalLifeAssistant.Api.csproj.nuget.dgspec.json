@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\admin\\Documents\\New project\\src\\PersonalLifeAssistant.Api\\PersonalLifeAssistant.Api.csproj": {}
+    "E:\\PersonalLifeAssistant AIAgent\\-Personal-Life-Assistant-AI-Agent\\src\\PersonalLifeAssistant.Api\\PersonalLifeAssistant.Api.csproj": {}
   },
   "projects": {
-    "C:\\Users\\admin\\Documents\\New project\\src\\PersonalLifeAssistant.Api\\PersonalLifeAssistant.Api.csproj": {
+    "E:\\PersonalLifeAssistant AIAgent\\-Personal-Life-Assistant-AI-Agent\\src\\PersonalLifeAssistant.Api\\PersonalLifeAssistant.Api.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\admin\\Documents\\New project\\src\\PersonalLifeAssistant.Api\\PersonalLifeAssistant.Api.csproj",
+        "projectUniqueName": "E:\\PersonalLifeAssistant AIAgent\\-Personal-Life-Assistant-AI-Agent\\src\\PersonalLifeAssistant.Api\\PersonalLifeAssistant.Api.csproj",
         "projectName": "PersonalLifeAssistant.Api",
-        "projectPath": "C:\\Users\\admin\\Documents\\New project\\src\\PersonalLifeAssistant.Api\\PersonalLifeAssistant.Api.csproj",
+        "projectPath": "E:\\PersonalLifeAssistant AIAgent\\-Personal-Life-Assistant-AI-Agent\\src\\PersonalLifeAssistant.Api\\PersonalLifeAssistant.Api.csproj",
         "packagesPath": "C:\\Users\\admin\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\admin\\Documents\\New project\\src\\PersonalLifeAssistant.Api\\obj\\",
+        "outputPath": "E:\\PersonalLifeAssistant AIAgent\\-Personal-Life-Assistant-AI-Agent\\src\\PersonalLifeAssistant.Api\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\admin\\Documents\\New project\\NuGet.Config",
+          "E:\\PersonalLifeAssistant AIAgent\\-Personal-Life-Assistant-AI-Agent\\NuGet.Config",
           "C:\\Users\\admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
@@ -33,11 +33,11 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\admin\\Documents\\New project\\src\\PersonalLifeAssistant.Application\\PersonalLifeAssistant.Application.csproj": {
-                "projectPath": "C:\\Users\\admin\\Documents\\New project\\src\\PersonalLifeAssistant.Application\\PersonalLifeAssistant.Application.csproj"
+              "E:\\PersonalLifeAssistant AIAgent\\-Personal-Life-Assistant-AI-Agent\\src\\PersonalLifeAssistant.Application\\PersonalLifeAssistant.Application.csproj": {
+                "projectPath": "E:\\PersonalLifeAssistant AIAgent\\-Personal-Life-Assistant-AI-Agent\\src\\PersonalLifeAssistant.Application\\PersonalLifeAssistant.Application.csproj"
               },
-              "C:\\Users\\admin\\Documents\\New project\\src\\PersonalLifeAssistant.Infrastructure\\PersonalLifeAssistant.Infrastructure.csproj": {
-                "projectPath": "C:\\Users\\admin\\Documents\\New project\\src\\PersonalLifeAssistant.Infrastructure\\PersonalLifeAssistant.Infrastructure.csproj"
+              "E:\\PersonalLifeAssistant AIAgent\\-Personal-Life-Assistant-AI-Agent\\src\\PersonalLifeAssistant.Infrastructure\\PersonalLifeAssistant.Infrastructure.csproj": {
+                "projectPath": "E:\\PersonalLifeAssistant AIAgent\\-Personal-Life-Assistant-AI-Agent\\src\\PersonalLifeAssistant.Infrastructure\\PersonalLifeAssistant.Infrastructure.csproj"
               }
             }
           }
@@ -102,20 +102,20 @@
         }
       }
     },
-    "C:\\Users\\admin\\Documents\\New project\\src\\PersonalLifeAssistant.Application\\PersonalLifeAssistant.Application.csproj": {
+    "E:\\PersonalLifeAssistant AIAgent\\-Personal-Life-Assistant-AI-Agent\\src\\PersonalLifeAssistant.Application\\PersonalLifeAssistant.Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\admin\\Documents\\New project\\src\\PersonalLifeAssistant.Application\\PersonalLifeAssistant.Application.csproj",
+        "projectUniqueName": "E:\\PersonalLifeAssistant AIAgent\\-Personal-Life-Assistant-AI-Agent\\src\\PersonalLifeAssistant.Application\\PersonalLifeAssistant.Application.csproj",
         "projectName": "PersonalLifeAssistant.Application",
-        "projectPath": "C:\\Users\\admin\\Documents\\New project\\src\\PersonalLifeAssistant.Application\\PersonalLifeAssistant.Application.csproj",
+        "projectPath": "E:\\PersonalLifeAssistant AIAgent\\-Personal-Life-Assistant-AI-Agent\\src\\PersonalLifeAssistant.Application\\PersonalLifeAssistant.Application.csproj",
         "packagesPath": "C:\\Users\\admin\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\admin\\Documents\\New project\\src\\PersonalLifeAssistant.Application\\obj\\",
+        "outputPath": "E:\\PersonalLifeAssistant AIAgent\\-Personal-Life-Assistant-AI-Agent\\src\\PersonalLifeAssistant.Application\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\admin\\Documents\\New project\\NuGet.Config",
+          "E:\\PersonalLifeAssistant AIAgent\\-Personal-Life-Assistant-AI-Agent\\NuGet.Config",
           "C:\\Users\\admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
@@ -131,8 +131,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\admin\\Documents\\New project\\src\\PersonalLifeAssistant.Domain\\PersonalLifeAssistant.Domain.csproj": {
-                "projectPath": "C:\\Users\\admin\\Documents\\New project\\src\\PersonalLifeAssistant.Domain\\PersonalLifeAssistant.Domain.csproj"
+              "E:\\PersonalLifeAssistant AIAgent\\-Personal-Life-Assistant-AI-Agent\\src\\PersonalLifeAssistant.Domain\\PersonalLifeAssistant.Domain.csproj": {
+                "projectPath": "E:\\PersonalLifeAssistant AIAgent\\-Personal-Life-Assistant-AI-Agent\\src\\PersonalLifeAssistant.Domain\\PersonalLifeAssistant.Domain.csproj"
               }
             }
           }
@@ -182,20 +182,20 @@
         }
       }
     },
-    "C:\\Users\\admin\\Documents\\New project\\src\\PersonalLifeAssistant.Domain\\PersonalLifeAssistant.Domain.csproj": {
+    "E:\\PersonalLifeAssistant AIAgent\\-Personal-Life-Assistant-AI-Agent\\src\\PersonalLifeAssistant.Domain\\PersonalLifeAssistant.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\admin\\Documents\\New project\\src\\PersonalLifeAssistant.Domain\\PersonalLifeAssistant.Domain.csproj",
+        "projectUniqueName": "E:\\PersonalLifeAssistant AIAgent\\-Personal-Life-Assistant-AI-Agent\\src\\PersonalLifeAssistant.Domain\\PersonalLifeAssistant.Domain.csproj",
         "projectName": "PersonalLifeAssistant.Domain",
-        "projectPath": "C:\\Users\\admin\\Documents\\New project\\src\\PersonalLifeAssistant.Domain\\PersonalLifeAssistant.Domain.csproj",
+        "projectPath": "E:\\PersonalLifeAssistant AIAgent\\-Personal-Life-Assistant-AI-Agent\\src\\PersonalLifeAssistant.Domain\\PersonalLifeAssistant.Domain.csproj",
         "packagesPath": "C:\\Users\\admin\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\admin\\Documents\\New project\\src\\PersonalLifeAssistant.Domain\\obj\\",
+        "outputPath": "E:\\PersonalLifeAssistant AIAgent\\-Personal-Life-Assistant-AI-Agent\\src\\PersonalLifeAssistant.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\admin\\Documents\\New project\\NuGet.Config",
+          "E:\\PersonalLifeAssistant AIAgent\\-Personal-Life-Assistant-AI-Agent\\NuGet.Config",
           "C:\\Users\\admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
@@ -248,20 +248,20 @@
         }
       }
     },
-    "C:\\Users\\admin\\Documents\\New project\\src\\PersonalLifeAssistant.Infrastructure\\PersonalLifeAssistant.Infrastructure.csproj": {
+    "E:\\PersonalLifeAssistant AIAgent\\-Personal-Life-Assistant-AI-Agent\\src\\PersonalLifeAssistant.Infrastructure\\PersonalLifeAssistant.Infrastructure.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\admin\\Documents\\New project\\src\\PersonalLifeAssistant.Infrastructure\\PersonalLifeAssistant.Infrastructure.csproj",
+        "projectUniqueName": "E:\\PersonalLifeAssistant AIAgent\\-Personal-Life-Assistant-AI-Agent\\src\\PersonalLifeAssistant.Infrastructure\\PersonalLifeAssistant.Infrastructure.csproj",
         "projectName": "PersonalLifeAssistant.Infrastructure",
-        "projectPath": "C:\\Users\\admin\\Documents\\New project\\src\\PersonalLifeAssistant.Infrastructure\\PersonalLifeAssistant.Infrastructure.csproj",
+        "projectPath": "E:\\PersonalLifeAssistant AIAgent\\-Personal-Life-Assistant-AI-Agent\\src\\PersonalLifeAssistant.Infrastructure\\PersonalLifeAssistant.Infrastructure.csproj",
         "packagesPath": "C:\\Users\\admin\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\admin\\Documents\\New project\\src\\PersonalLifeAssistant.Infrastructure\\obj\\",
+        "outputPath": "E:\\PersonalLifeAssistant AIAgent\\-Personal-Life-Assistant-AI-Agent\\src\\PersonalLifeAssistant.Infrastructure\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\admin\\Documents\\New project\\NuGet.Config",
+          "E:\\PersonalLifeAssistant AIAgent\\-Personal-Life-Assistant-AI-Agent\\NuGet.Config",
           "C:\\Users\\admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
@@ -277,11 +277,11 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\admin\\Documents\\New project\\src\\PersonalLifeAssistant.Application\\PersonalLifeAssistant.Application.csproj": {
-                "projectPath": "C:\\Users\\admin\\Documents\\New project\\src\\PersonalLifeAssistant.Application\\PersonalLifeAssistant.Application.csproj"
+              "E:\\PersonalLifeAssistant AIAgent\\-Personal-Life-Assistant-AI-Agent\\src\\PersonalLifeAssistant.Application\\PersonalLifeAssistant.Application.csproj": {
+                "projectPath": "E:\\PersonalLifeAssistant AIAgent\\-Personal-Life-Assistant-AI-Agent\\src\\PersonalLifeAssistant.Application\\PersonalLifeAssistant.Application.csproj"
               },
-              "C:\\Users\\admin\\Documents\\New project\\src\\PersonalLifeAssistant.Domain\\PersonalLifeAssistant.Domain.csproj": {
-                "projectPath": "C:\\Users\\admin\\Documents\\New project\\src\\PersonalLifeAssistant.Domain\\PersonalLifeAssistant.Domain.csproj"
+              "E:\\PersonalLifeAssistant AIAgent\\-Personal-Life-Assistant-AI-Agent\\src\\PersonalLifeAssistant.Domain\\PersonalLifeAssistant.Domain.csproj": {
+                "projectPath": "E:\\PersonalLifeAssistant AIAgent\\-Personal-Life-Assistant-AI-Agent\\src\\PersonalLifeAssistant.Domain\\PersonalLifeAssistant.Domain.csproj"
               }
             }
           }

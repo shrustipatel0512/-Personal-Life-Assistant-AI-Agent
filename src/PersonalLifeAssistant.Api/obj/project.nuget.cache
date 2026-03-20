@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "fuWfiRkxwME=",
+  "dgSpecHash": "fRgUK3qKxko=",
   "success": true,
-  "projectFilePath": "C:\\Users\\admin\\Documents\\New project\\src\\PersonalLifeAssistant.Api\\PersonalLifeAssistant.Api.csproj",
+  "projectFilePath": "E:\\PersonalLifeAssistant AIAgent\\-Personal-Life-Assistant-AI-Agent\\src\\PersonalLifeAssistant.Api\\PersonalLifeAssistant.Api.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\admin\\.nuget\\packages\\fluentvalidation\\11.11.0\\fluentvalidation.11.11.0.nupkg.sha512",
     "C:\\Users\\admin\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
