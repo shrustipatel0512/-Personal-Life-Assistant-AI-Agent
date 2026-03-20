@@ -24,14 +24,7 @@ public class GeminiAiService : IAiService
     {
         if (!HasConfiguredApiKey())
         {
-            return new AiGeneratedTaskAnalysis
-            {
-                SuggestedPriority = request.DueDateUtc is not null && request.DueDateUtc <= DateTimeOffset.UtcNow.AddDays(1)
-                    ? TaskPriority.High
-                    : TaskPriority.Medium,
-                SuggestedCategory = InferCategory(request.Title, request.Description),
-                Reasoning = "Fallback prioritization was used because Gemini API is not configured yet."
-            };
+            return BuildFallbackTaskAnalysis(request, "Fallback prioritization was used because Gemini API is not configured yet.");
         }
 
         var prompt = $"""
@@ -46,8 +39,15 @@ public class GeminiAiService : IAiService
         Valid categories: Work, Personal, Health, Finance, Family.
         """;
 
-        var responseText = await SendPromptAsync(prompt, cancellationToken);
-        return ParseTaskAnalysis(responseText);
+        try
+        {
+            var responseText = await SendPromptAsync(prompt, cancellationToken);
+            return ParseTaskAnalysis(responseText);
+        }
+        catch
+        {
+            return BuildFallbackTaskAnalysis(request, "Fallback prioritization was used because Gemini could not be reached.");
+        }
     }
 
     public async Task<IReadOnlyList<PlannerItemDto>> GenerateDailyPlanAsync(string userContext, IReadOnlyList<TaskSummaryDto> tasks, CancellationToken cancellationToken)
@@ -78,8 +78,15 @@ public class GeminiAiService : IAiService
         - Only return a plan for the provided tasks.
         """;
 
-        var responseText = await SendPromptAsync(prompt, cancellationToken);
-        return JsonSerializer.Deserialize<List<PlannerItemDto>>(responseText, JsonOptions()) ?? [];
+        try
+        {
+            var responseText = await SendPromptAsync(prompt, cancellationToken);
+            return JsonSerializer.Deserialize<List<PlannerItemDto>>(responseText, JsonOptions()) ?? [];
+        }
+        catch
+        {
+            return BuildFallbackPlan(tasks);
+        }
     }
 
     public async Task<ChatReplyDto> SendChatAsync(string userMessage, string userContext, IReadOnlyList<string> recentMessages, CancellationToken cancellationToken)
@@ -107,13 +114,25 @@ public class GeminiAiService : IAiService
         {userMessage}
         """;
 
-        var responseText = await SendPromptAsync(prompt, cancellationToken);
-        return JsonSerializer.Deserialize<ChatReplyDto>(responseText, JsonOptions()) ?? new ChatReplyDto
+        try
         {
-            Response = "I can help plan your day, prioritize tasks, and suggest reminders.",
-            Intent = "assistant_response",
-            SuggestedActions = new[] { "Open planner", "Review today's tasks" }
-        };
+            var responseText = await SendPromptAsync(prompt, cancellationToken);
+            return JsonSerializer.Deserialize<ChatReplyDto>(responseText, JsonOptions()) ?? new ChatReplyDto
+            {
+                Response = "I can help plan your day, prioritize tasks, and suggest reminders.",
+                Intent = "assistant_response",
+                SuggestedActions = new[] { "Open planner", "Review today's tasks" }
+            };
+        }
+        catch
+        {
+            return new ChatReplyDto
+            {
+                Response = $"You said: \"{userMessage}\". Gemini is temporarily unavailable, so I am replying with the local fallback assistant. I can still help you organize tasks and suggest your next focus area.",
+                Intent = "fallback_chat",
+                SuggestedActions = new[] { "Create a high-priority task", "Generate today's plan" }
+            };
+        }
     }
 
     private async Task<string> SendPromptAsync(string prompt, CancellationToken cancellationToken)
@@ -148,6 +167,18 @@ public class GeminiAiService : IAiService
     private bool HasConfiguredApiKey()
         => !string.IsNullOrWhiteSpace(_options.ApiKey) &&
            !_options.ApiKey.Contains("YOUR_GEMINI_API_KEY", StringComparison.OrdinalIgnoreCase);
+
+    private static AiGeneratedTaskAnalysis BuildFallbackTaskAnalysis(CreateTaskRequest request, string reasoning)
+    {
+        return new AiGeneratedTaskAnalysis
+        {
+            SuggestedPriority = request.DueDateUtc is not null && request.DueDateUtc <= DateTimeOffset.UtcNow.AddDays(1)
+                ? TaskPriority.High
+                : TaskPriority.Medium,
+            SuggestedCategory = InferCategory(request.Title, request.Description),
+            Reasoning = reasoning
+        };
+    }
 
     private static TaskCategory InferCategory(string title, string? description)
     {
