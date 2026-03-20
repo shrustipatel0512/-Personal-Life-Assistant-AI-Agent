@@ -16,10 +16,13 @@ RUN dotnet publish src/PersonalLifeAssistant.Api/PersonalLifeAssistant.Api.cspro
 FROM mcr.microsoft.com/dotnet/aspnet:8.0 AS runtime
 WORKDIR /app
 
-ENV ASPNETCORE_URLS=http://+:8080
+ENV PORT=8080 \
+    Gemini__ApiKey= \
+    Gemini__Model=gemini-2.5-flash \
+    Gemini__BaseUrl=https://generativelanguage.googleapis.com/v1beta
 
 COPY --from=build /app/publish .
 
 EXPOSE 8080
 
-ENTRYPOINT ["dotnet", "PersonalLifeAssistant.Api.dll"]
+ENTRYPOINT ["sh", "-c", "ASPNETCORE_URLS=http://+:${PORT:-8080} dotnet PersonalLifeAssistant.Api.dll"]

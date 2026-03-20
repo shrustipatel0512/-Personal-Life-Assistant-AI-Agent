@@ -1,0 +1,7 @@
+.vs/
+bin/
+obj/
+.codex-temp-build/
+.efbuild/
+api-build.log
+api.binlog
